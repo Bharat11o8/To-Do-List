@@ -24,7 +24,6 @@ header {
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 50px;
 }
 
 .todo-input {
@@ -75,6 +74,7 @@ header {
   flex: 1;
   width: 304px;
   border: none;
+  overflow: auto;
 }
 
 .trash-btn,
@@ -131,7 +131,7 @@ select {
 }
 
 .select {
-  margin: 1rem;
+  margin: 1rem;  
   overflow: hidden;
   justify-content: center;
   display: flex;
@@ -146,10 +146,15 @@ select {
   font-weight: bold;
   font-size: 14px;
   width: 10rem;
-  height: 2.8rem;
+  height: 3rem;
   cursor: pointer;
   position: absolute;
-  top: 14.5rem;
-  left: 59rem;
+  top: 28.5%;
+  left: 66%;
   padding: 10px;
+}
+
+.list-expand{
+  height: fit-content !important;
+  overflow: visible !important;
 }

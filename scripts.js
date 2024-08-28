@@ -52,6 +52,10 @@ function deleteCheck(e) {
     const todo = item.parentElement;
     todo.classList.toggle("completed");
   }
+  if (item.classList[0] === "todo-item") {
+    item.classList.toggle("list-expand");
+    console.log("ad");
+  }
 }
 
 function filterTodo(e) {
