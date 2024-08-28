@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  background-image: linear-gradient(120deg, #09203f, #375266);
+  color: white;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+  font-size: 38px;
+  margin-bottom: 6%;
+  font-weight: bold;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 50px;
+}
+
+.todo-input {
+  width: 25%;
+  border: none;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 54px 55px,
+    rgba(0, 0, 0, 0.52) 0px -12px 30px, rgba(0, 0, 0, 0.52) 0px 4px 6px,
+    rgba(0, 0, 0, 0.57) 0px 12px 13px, rgba(0, 0, 0, 0.59) 0px -3px 5px;
+}
+
+.todo-button {
+  border: none;
+  padding: 5px 10px;
+  background-image: linear-gradient(120deg, #0e376c, #375266);
+  border: 2px white solid;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 54px 55px,
+    rgba(0, 0, 0, 0.52) 0px -12px 30px, rgba(0, 0, 0, 0.52) 0px 4px 6px,
+    rgba(0, 0, 0, 0.57) 0px 12px 13px, rgba(0, 0, 0, 0.59) 0px -3px 5px;
+}
+.todo-button i {
+  color: white;
+  font-size: 35px;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 10px;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.todo li {
+  flex: 1;
+  width: 304px;
+  border: none;
+}
+
+.trash-btn,
+.complete-btn {
+  background: linear-gradient(
+    110.1deg,
+    rgb(34, 126, 34) 2.9%,
+    rgb(168, 251, 60) 90.3%
+  );
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.trash-btn {
+  background: linear-gradient(
+    120deg,
+    rgb(150, 15, 15) 10.6%,
+    rgba(255, 0, 0, 0.87) 91.1%
+  );
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+input {
+  font-size: 24px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  border: none;
+  outline: none;
+}
+
+.select {
+  margin: 1rem;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+}
+
+select {
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 54px 55px,
+    rgba(0, 0, 0, 0.52) 0px -12px 30px, rgba(0, 0, 0, 0.52) 0px 4px 6px,
+    rgba(0, 0, 0, 0.57) 0px 12px 13px, rgba(0, 0, 0, 0.59) 0px -3px 5px;
+  color: #103450;
+  font-weight: bold;
+  font-size: 14px;
+  width: 10rem;
+  height: 2.8rem;
+  cursor: pointer;
+  position: absolute;
+  top: 14.5rem;
+  left: 59rem;
+  padding: 10px;
+}
